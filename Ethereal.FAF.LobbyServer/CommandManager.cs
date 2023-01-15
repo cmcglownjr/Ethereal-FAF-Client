@@ -64,9 +64,9 @@ namespace Ethereal.FAF.LobbyServer
                 Command = ServerCommand.welcome,
                 me = new()
                 {
-                    login = data.unique_id[..10],
-                    id = new Random().Next(0, 1000000),
-                    ratings = new Dictionary<string, Rating>()
+                    Login = data.unique_id[..10],
+                    Id = new Random().Next(0, 1000000),
+                    Ratings = new Dictionary<string, Rating>()
                      {
                          { "global", new Rating()
                          {
